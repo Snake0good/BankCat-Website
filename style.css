@@ -140,6 +140,11 @@ body {
     align-items: center;
 }
 
+.modal-click span {
+    color: var(--green-color);
+    font-size: 1.5rem;
+}
+
 .input {
     width: 90%;
     height: 90%;
