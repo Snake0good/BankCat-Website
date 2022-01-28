@@ -833,10 +833,8 @@ button:hover {
 
     .modal-content {
         width: 90%;
+        padding; 2px
     }
-
-
-
 
     .right-nav {
         display: none;
