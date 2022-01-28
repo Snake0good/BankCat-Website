@@ -11,6 +11,36 @@
     <title>Bank Cat - The Best Banking</title>
 </head>
 <body>
+    
+       <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <p>START FOR FREE</p>
+                <h2>Create a new account.</h2>
+                <p>Already a member? <a href="#">Log in</a></p>
+            </div>
+
+            <div class="modal-body">            
+                <p>Email:</p>
+                <div class="modal-click"><input class="input" type="email" placeholder="Please enter your email"><i class="far fa-envelope"></i></div>
+                <p>Password:</p>
+                <div class="modal-click"><input class="input" type="password" placeholder="Enter password"><i class="fas fa-lock"></i></div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-click modal-btn close-modal" onclick="hideModal()">Create an Account</button>
+                <button id="close-modal" class="modal-click modal-btn send" onclick="hideModal()">Sign up with Google</button>
+            </div>
+        </div>
+    
+    </div> 
+    
+    
+    
+    
     <section id="section-1" class="container">
         <nav>
             <div class="left-nav">
