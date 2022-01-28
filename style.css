@@ -3,6 +3,9 @@
 :root {
     --white-color: #FFFFFF;
     --grey-color: #b8b8b8;
+    --black-color: black;
+    --green-color: #2B832E;
+    --light-grey-text: #707474;
 }
 
 * {
@@ -24,12 +27,160 @@ body {
 
 
 
+/* ----- Modal stuffs ------ */
+
+.modal {
+   /* display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 20%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    margin: auto;
+    padding: 0;
+    border: none;
+    width: 500px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animatetop;
+    animation-duration: 0.7s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {opacity:0} 
+    to {opacity:1}
+}
+
+@keyframes animatetop {
+    from {opacity:0}
+    to {opacity:1}
+}
+
+
+
+/* The Close Button */
+
+.modal-content {
+    padding: 50px;
+}
+
+.close {
+    color: var(--green-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: var(--white-color);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-header p{
+    font-size: 0.9rem;
+    color: var(--black-color);
+}
+
+.modal-header h2 {
+    color: var(--black-color)
+}
+
+.modal-body {
+    padding: 2px 16px;
+    background-color: var(--white-color);
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 16px;
+    background-color: var(--white-color);
+    border-radius: 0 0 15px 15px;;
+    color: white;
+    margin-top: 30px;
+}
+
+.modal-body p {
+    color: var(--black-color);
+    margin-bottom: 0;;
+}
+
+.modal-click {
+    width: 100%;
+    height: 50px;
+    background-color: var(--white-color);
+    border: 1px solid var(--grey-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    width: 90%;
+    height: 90%;
+    padding-left: 15px;
+    border: none;
+    font-size: 1rem;
+    background-color: var(--white-color);
+}
+
+.modal-btn {
+    background-color: var(--green-color);
+    text-align: center;
+    justify-content: center;
+    padding: 12px 15px;
+    border: none; 
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.send {
+    background-color: #387DF6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 90px;
+    margin: 0px 70px;
 }
 
 nav {
@@ -163,6 +314,10 @@ main {
 
 .cash-balance div {
     margin: 5px;
+}
+
+.cash-balance-text {
+    padding: 10px;
 }
 
 .cash-balance h3 {
@@ -646,6 +801,11 @@ button:hover {
     margin: 15px;
 }
 
+#social a:hover {
+    color: var(--green-color)
+}
+
+
 
 
 
@@ -660,6 +820,13 @@ button:hover {
     * {
        outline: none;
     }
+
+    .modal-content {
+        width: 90%;
+    }
+
+
+
 
     .right-nav {
         display: none;
@@ -723,7 +890,7 @@ button:hover {
     }
 
     #get-started {
-        width: 100px; 
+        width: 125px; 
         height:45px;
         font-size: 1.1rem;
         border-radius: 5px;
@@ -734,9 +901,10 @@ button:hover {
         border: 1px solid #2B832E;
         border-radius: 5px;
         height: 45px;
-        width: 100px;
+        width: 125px;
         display: flex;
         justify-content: center; 
+        align-items: center;
     }
 
     #how-it-works a {
@@ -803,7 +971,7 @@ button:hover {
 
     .qual-service {
         width: 100%;
-        padding: 0;
+        padding: 15px;
         margin: 10px 0;
         align-items: center;
         text-align: center;
