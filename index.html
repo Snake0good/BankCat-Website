@@ -22,7 +22,7 @@
                 <span class="close">&times;</span>
                 <p>START FOR FREE</p>
                 <h2>Create a new account.</h2>
-                <p>Already a member? <a href="#">Log in</a></p>
+                <p>Already a member? <a href="#" onclick="hideModal()">Log in</a></p>
             </div>
 
             <div class="modal-body">            
@@ -190,7 +190,7 @@
                 <h1>Easy Way To See Your Total Balance In Your Card</h1>
                 <p>You can monitor your balance on your card and you can also use your payment using your card easily here.</p>
                 <div class="left-main-buttons">
-                    <button id="get-started">Learn More</button>
+                    <button id="get-started" onclick="showModal()">Learn More</button>
                 </div>
             </div>
 
@@ -221,7 +221,7 @@
                     <input type=email id="email" placeholder="Email address">
                 </span>
                 <div class="button-div">
-                    <button onclick="showModal() id="subcribe">Subscribe</button>
+                    <button id="subscribe" onclick="showModal()">Subscribe</button>
                 </div>    
             </div>
         </main>
@@ -277,7 +277,7 @@
             <p>Question or feedback? We love to hear from you</p>
             <span class="email-get-in-touch">
                 <input type=email placeholder="Your email">
-                <a onclick="showModal() href="#"><i class="fas fa-paper-plane"></i></a>
+                <a href="#bottom" onclick="showModal()"><i class="fas fa-paper-plane"></i></a>
             </span>
 
         </div>
