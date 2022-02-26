@@ -14,6 +14,8 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100vw; 
+    overflow-x: hidden;
 }
 
 body {
@@ -22,6 +24,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+
 }
 
 
@@ -250,14 +253,18 @@ main {
     margin: -25px 0 -15px;
 }
 
+
+
 .left-main {
     width: 60%;
     padding-top: 45px;
 }
 
 .right-main {
-    width: 40%
+    width: 40%;
+    overflow-x: hidden;
 }
+
 
 .left-main h1{
     font-size: 4rem;
@@ -820,8 +827,66 @@ button:hover {
 
 
 
+@media only screen and (max-width: 1170px) {
+    body, html {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .center-nav a {
+        margin: 10px;
+    }
+
+    .card-swiping-picture {
+        background-position: -80px center;
+        background-repeat: no-repeat;
+    }    
+
+    .payment-completed {
+        left: 10px;
+    }
+    
+    .quality-service-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-section-4, .right-main {
+        overflow: visible ;
+    }
+
+    .qual-service {
+        width: 30%;
+        margin: 5px;
+    }
+
+    #section-3 {
+        width: 100%;
+        padding: 0;
+        margin: 0 15px; 
+    }
+
+    .left-section-3, .right-section-3 {
+        width: 45%;
+        height: fit-content;
+        margin: 55px 0;
+    }
+
+    .left-section-3 img {
+        position: center center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-5-container h1 {
+        text-align: center;
+    }
 
 
+
+
+}
 
 
 
@@ -833,23 +898,32 @@ button:hover {
 
     .modal-content {
         width: 90%;
+    }
+
+    .modal-content {
         padding: 2px;
     }
+
+
+    .section-3 {
+        padding: 50px
+    }
+
 
     .right-nav {
         display: none;
     }
 
     .left-nav h2, .center-nav a, .right-nav {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .left-nav span {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-right: 2px;
     }
     
-    nav a {
+    .center-nav a {
         margin: 3px;
         color: var(--grey-color)
     }
@@ -884,7 +958,7 @@ button:hover {
     }
 
     .left-main h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .left-main p {
@@ -973,7 +1047,9 @@ button:hover {
 
     .quality-service-container {
         margin: 0 10px;
-        width: 90%;
+        display: flex;
+        justify-content: center;
+        width: 80%;
         padding: 0;
     }
 
@@ -1005,7 +1081,7 @@ button:hover {
         left: 10%;
         bottom: 3rem;
     }
-    .right-section-3 {
+    .right-section-3, .left-section-3 {
         width: 100%;
         padding: 0.2rem;
     }
@@ -1017,6 +1093,10 @@ button:hover {
     .bankcat-features-header h1 {
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    .bankcat-features {
+        width: 80%;
     }
 
     .bankcat-features div {
